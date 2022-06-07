@@ -1,0 +1,14 @@
+configName: default
+folderName: USBHost_6
+format_version: v1.0
+frameworkPath: C:\Users\hisay\Harmony3
+processor: PIC32MX270F256B
+projectName: null
+settings:
+  PackageFilter: bsp;core;core_apps_pic32mm;core_apps_pic32mx;csp;csp_apps_pic32mm;csp_apps_pic32mx;Devices;dev_packs;gfx;harmony-services;motor_control;quick_docs;reference_apps;touch;usb;usb_apps_device;usb_apps_dual_role;usb_apps_host;usb_apps_multi_controller;x2c
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\PIC32MX_DFP\1.5.259\atdf\PIC32MX270F256B.atdf

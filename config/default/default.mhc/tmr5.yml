@@ -1,0 +1,100 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: tmr5}
+children:
+- type: Symbols
+  children:
+  - type: Hex
+    attributes: {id: TCON_REG_VALUE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tmr5, value: '0'}
+  - type: Integer
+    attributes: {id: TIMER_CLOCK_FREQ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tmr5, value: '20000000'}
+  - type: Long
+    attributes: {id: TIMER_PERIOD}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tmr5, value: '5999'}
+  - type: Boolean
+    attributes: {id: TIMER_SLAVE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tmr5, value: 'false'}
+  - type: Float
+    attributes: {id: TIMER_TIME_PERIOD_MS}
+    children:
+    - type: Attributes
+      children:
+      - type: Float
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '3.27685'}
+  - type: File
+    attributes: {id: TMR_HEADER1}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Boolean
+    attributes: {id: TMR_INTERRUPT_MODE}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tmr5, value: 'true'}
+      - type: User
+        attributes: {value: 'true'}
+  - type: Integer
+    attributes: {id: TMR_PRESCALER_VALUE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tmr5, value: '1'}
+  - type: File
+    attributes: {id: TMR_SOURCE}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+- type: Attachments
+  children:
+  - type: DirectCapability
+    attributes: {id: TMR5_TMR}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: i2c_bb}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: TMR}
+- type: ElementPosition
+  attributes: {x: '65', y: '282', id: tmr5}
